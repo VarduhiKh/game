@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintHorizontal_chainStyle="spread_inside">
+
+    <TextView
+        android:id="@+id/tic_tac_title"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:text="@string/tic_tac"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/first_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tic_tac_title" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/seventh_cube"
+        app:layout_constraintEnd_toStartOf="@id/second_cube"
+        app:layout_constraintStart_toEndOf="@id/first_cube"
+        app:layout_constraintTop_toTopOf="@id/first_cube" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@id/fourth_cube"
+        app:layout_constraintEnd_toEndOf="@id/third_cube"
+        app:layout_constraintStart_toStartOf="@id/first_cube"
+        app:layout_constraintTop_toBottomOf="@id/first_cube" />
+
+    <Button
+        android:id="@+id/second_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintEnd_toStartOf="@id/third_cube"
+        app:layout_constraintStart_toEndOf="@id/first_cube"
+        app:layout_constraintTop_toTopOf="@id/first_cube" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/eighth_cube"
+        app:layout_constraintEnd_toStartOf="@id/third_cube"
+        app:layout_constraintStart_toEndOf="@id/second_cube"
+        app:layout_constraintTop_toTopOf="@id/second_cube" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@id/seventh_cube"
+        app:layout_constraintEnd_toEndOf="@id/sixth_cube"
+        app:layout_constraintStart_toStartOf="@id/fourth_cube"
+        app:layout_constraintTop_toBottomOf="@id/fourth_cube" />
+
+    <Button
+        android:id="@+id/third_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/second_cube"
+        app:layout_constraintTop_toTopOf="@id/second_cube" />
+
+    <Button
+        android:id="@+id/fourth_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_cube" />
+
+    <Button
+        android:id="@+id/fifth_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintEnd_toStartOf="@id/sixth_cube"
+        app:layout_constraintStart_toEndOf="@id/fourth_cube"
+        app:layout_constraintTop_toTopOf="@id/fourth_cube" />
+
+    <Button
+        android:id="@+id/sixth_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fifth_cube"
+        app:layout_constraintTop_toTopOf="@id/fifth_cube" />
+
+    <Button
+        android:id="@+id/seventh_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourth_cube" />
+
+    <Button
+        android:id="@+id/eighth_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintEnd_toStartOf="@id/ninth_cube"
+        app:layout_constraintStart_toEndOf="@id/seventh_cube"
+        app:layout_constraintTop_toTopOf="@id/seventh_cube" />
+
+    <Button
+        android:id="@+id/ninth_cube"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/white"
+        android:onClick="cubeClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/eighth_cube"
+        app:layout_constraintTop_toTopOf="@id/eighth_cube" />
+
+    <TextView
+        android:id="@+id/player_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ninth_cube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/reset_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_game"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/end_game"
+        app:layout_constraintTop_toBottomOf="@id/player_id"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/end_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_game"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reset_game"
+        app:layout_constraintTop_toBottomOf="@id/player_id"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

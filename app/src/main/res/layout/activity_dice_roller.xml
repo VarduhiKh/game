@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dicer_image"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/dice_roller"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/first_dicer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toStartOf="@id/second_dicer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dicer_image" />
+
+    <ImageView
+        android:id="@+id/second_dicer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/first_dicer"
+        app:layout_constraintTop_toBottomOf="@id/dicer_image" />
+
+    <Button
+        android:id="@+id/roll_botton"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/roll"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/end_botton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dicer_image" />
+
+    <Button
+        android:id="@+id/end_botton"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/roll_botton"
+        app:layout_constraintTop_toBottomOf="@id/dicer_image" />
+
+    <TextView
+        android:id="@+id/dicer_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roll_botton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

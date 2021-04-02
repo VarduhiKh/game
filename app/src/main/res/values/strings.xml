@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FragmentWithoutNavigation</string>
+    <string name="player_one">Player 1</string>
+    <string name="player_two">Player 2</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="dice_roller">Dice Roller</string>
+    <string name="add_player">Add player</string>
+    <string name="tic_tac">Tic Tac Toe</string>
+    <string name="add_button">Add player</string>
+    <string name="roll">Roll</string>
+    <string name="end">End</string>
+    <string name="end_game">End</string>
+    <string name="reset_game">Reset</string>
+</resources>
